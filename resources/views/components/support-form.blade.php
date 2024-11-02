@@ -75,12 +75,12 @@
             <textarea id="issue" name="issue" rows="3" required></textarea>
 
             <label for="country_code">Country Code:</label>
-            <select id="country_code" name="country_code" required onchange="updatePhonePlaceholder()">
-                <option value="+1">+1 (USA)</option>
-                <option value="+44">+44 (UK)</option>
-                <option value="+91">+91 (India)</option>
-                <option value="+254">+254 (Kenya)</option>
-                <!-- Add more countries as needed -->
+            <label for="country_code">Country Code:</label>
+<select id="country_code" name="country_code" required onchange="updatePhonePlaceholder()">
+    <option value="+1">+1 (USA)</option>
+    <option value="+44">+44 (UK)</option>
+    <option value="+91">+91 (India)</option>
+    <option value="+254">+254 (Kenya)</option>
             </select>
 
             <<label for="phone">Phone:</label>
