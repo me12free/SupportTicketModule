@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SupportTicketController;
 use App\Http\Controllers\SupportController;
 
 
@@ -22,7 +21,6 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::post('/support/store', [SupportTicketController::class, 'store'])->name('support.store');
 
 //Test pages
 // Route::view('/', 'test.landing');
@@ -32,6 +30,6 @@ Route::view('/contact', 'test.contact');
 Route::view('/cart', 'test.cart');
 
 
-Route::post('/support', [SupportController::class, 'store'])->name('support.store');
+Route::post('/supports', [SupportController::class, 'store'])->name('support.store');
 
-
+Route::post('/supports', [SupportController::class, 'store'])->name('support.store');
